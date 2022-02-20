@@ -54,37 +54,39 @@ function App() {
   };
   return (
     <>
-      <Router>
-        <Navbar mode={mode} togglemode={togglemode} />
-        <div style={{ height: "3rem" }}>
-          <Alert alert={alert} />
-        </div>
-        <div className="container">
-          <Routes>
-            {/* for react-router-dom v6 and above Switch is changed to Routes and also in Route component element is needed to be passed */}
-            <Route
+      {/* <Router> */}
+      <Navbar mode={mode} togglemode={togglemode} />
+      <div style={{ height: "3rem" }}>
+        <Alert alert={alert} />
+      </div>
+      <div className="container">
+        {/* <Routes> */}
+        {/* for react-router-dom v6 and above Switch is changed to Routes and also in Route component element is needed to be passed */}
+        {/* <Route
               exact
               path="/"
-              element={
-                <div>
-                  <Home
-                    text={text}
-                    toUpper={toUpper}
-                    toLower={toLower}
-                    copyText={copyText}
-                    clearText={clearText}
-                    textOnChange={textOnChange}
-                    mode={mode}
-                  />
-                  <Preview text={text} mode={mode} />
-                </div>
-              }
-            />
+              element={ */}
+        {/* <div> */}
+        <Home
+          text={text}
+          toUpper={toUpper}
+          toLower={toLower}
+          copyText={copyText}
+          clearText={clearText}
+          textOnChange={textOnChange}
+          mode={mode}
+        />
+        <Preview text={text} mode={mode} />
+        {/* </div> */}
+        {/* } */}
+        {/* /> */}
 
-            <Route exact path="/Aboutus" element={<Aboutus />} />
-          </Routes>
-        </div>
-      </Router>
+        {/* <Route exact path="/Aboutus" element={ */}
+        {/* <Aboutus /> */}
+        {/* } /> */}
+        {/* </Routes> */}
+      </div>
+      {/* </Router> */}
     </>
   );
 }

@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Home(props) {
   return (
     <div>
       <label htmlFor="exampleFormControlTextarea1" className="form-label">
-        <h2 className="head">Enter Your Text Here</h2>
+        <h2 className="head my-3">Enter Your Text Here</h2>
       </label>
       <textarea
         className="form-control"
@@ -47,16 +46,9 @@ export default function Home(props) {
           <button
             disabled={props.text.length === 0}
             className="btn btn-primary my-3 ms-2"
-            onClick={props.searchMeaning}
+            onClick={props.clearText}
           >
-            <Link
-              className="alert-link text-white"
-              style={{ textDecoration: "none", fontWeight: 350 }}
-              to={`https://www.merriam-webster.com/dictionary/${props.text}`}
-              target="_blank"
-            >
-              Search Meaning
-            </Link>
+            Clear Text
           </button>
         </div>
       </div>

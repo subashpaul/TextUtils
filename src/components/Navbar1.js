@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
@@ -18,9 +17,9 @@ export default function Navbar(props) {
         className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
       >
         <div className="container-fluid">
-          <Link className="navbar-brand" onClick={clickedHome} to="/">
+          <a className="navbar-brand" onClick={clickedHome} href="/">
             TextUtils
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -36,25 +35,15 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link
+                <a
                   className="nav-link active"
                   id="home"
                   onClick={clickedHome}
                   aria-current="page"
-                  to="/"
+                  href="/"
                 >
                   Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  id="about"
-                  onClick={clickedAbout}
-                  to="/Aboutus"
-                >
-                  About Us
-                </Link>
+                </a>
               </li>
             </ul>
             <div
