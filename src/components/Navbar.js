@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
@@ -10,7 +10,6 @@ export default function Navbar(props) {
   const clickedAbout = () => {
     document.getElementById("about").className = "nav-link active";
     document.getElementById("home").className = "nav-link";
-    console.log("about");
   };
   return (
     <div>

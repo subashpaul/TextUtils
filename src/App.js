@@ -34,7 +34,7 @@ function App() {
   const toUpper = () => {
     let upText = text.toUpperCase();
     setText(upText);
-    showAlert("Cnverted to Uppercase!", "success");
+    showAlert("Coverted to Uppercase!", "success");
   };
   const toLower = () => {
     let loText = text.toLowerCase();
@@ -55,9 +55,11 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar mode={mode} togglemode={togglemode} />
-        <div style={{ height: "3rem" }}>
-          <Alert alert={alert} />
+        <div>
+          <Navbar mode={mode} togglemode={togglemode} />
+          <div style={{ height: "3rem" }}>
+            <Alert alert={alert} />
+          </div>
         </div>
         <div className="container">
           <Routes>
