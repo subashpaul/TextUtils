@@ -11,6 +11,9 @@ export default function Navbar(props) {
     document.getElementById("about").className = "nav-link active";
     document.getElementById("home").className = "nav-link";
   };
+  const toggleColor = (color) => {
+    document.body.classList = "bg-" + color;
+  };
   return (
     <div>
       <nav
@@ -57,6 +60,24 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
+            <div className="d-felx">
+              <button
+                className="btn m-1 btn-warning rounded"
+                onClick={() => toggleColor("warning")}
+              ></button>
+              <button
+                className="btn m-1 btn-success rounded"
+                onClick={() => toggleColor("success")}
+              ></button>
+              <button
+                className="btn m-1 btn-secondary rounded"
+                onClick={() => toggleColor("secondary")}
+              ></button>
+              <button
+                className="btn m-1 me-2 btn-danger rounded"
+                onClick={() => toggleColor("danger")}
+              ></button>
+            </div>
 
             <div
               className={`form-check form-switch text-${

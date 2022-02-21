@@ -13,6 +13,7 @@ export default function Home(props) {
         placeholder="Enter your here"
         value={props.text}
         onChange={props.textOnChange}
+        style={{ backgroundColor: "rgb(255 243 230)" }}
       ></textarea>
       <div className="row">
         <div className="col-md-3">
