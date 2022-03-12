@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
+  //this can be done using useLocation() hook in react router dom
   const clickedHome = () => {
     document.getElementById("about").className = "nav-link";
     document.getElementById("home").className = "nav-link active";

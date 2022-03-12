@@ -32,7 +32,7 @@ export default function Preview(props) {
             {props.text.length === 0
               ? "Type Something to Preview"
               : props.text === "\n"
-              ? "&nbsp"
+              ? '&nbsp'
               : props.text}
           </p>
         </div>
